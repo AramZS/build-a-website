@@ -1,28 +1,31 @@
 {
-  "name": "reveal-eleventy-template",
-  "version": "1.0.0",
-  "description": "Template for creating presentations",
-  "scripts": {
-    "start": "eleventy --serve --quiet",
-    "build": "NODE_ENV=production eleventy",
-    "tidy": "prettier ./src --write"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Bullrich/reveal-eleventy-template.git"
-  },
-  "author": "Javier Bullrich <javier@bullrich.dev>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Bullrich/reveal-eleventy-template/issues"
-  },
-  "homepage": "https://github.com/Bullrich/reveal-eleventy-template#readme",
-  "dependencies": {
-    "reveal.js": "^4.6.1"
-  },
-  "main": ".eleventy.js",
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "prettier": "^3.0.3"
-  }
+    "name": "build-a-website",
+    "version": "1.0.0",
+    "description": "A website that is a presentation about building a website.",
+    "scripts": {
+        "serve": "npx @11ty/eleventy --serve --port=8083",
+        "build": "NODE_ENV=production npx @11ty/eleventy",
+        "tidy": "prettier ./src --write",
+        "serve-with-log-debug": "DEBUG=Eleventy:Template* npx @11ty/eleventy --serve --port=8083 > ./buildlog.txt",
+        "serve-with-log": "npx @11ty/eleventy --serve --port=8083 | tee ./buildlog.txt"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AramZS/build-a-website.git"
+    },
+    "author": "Aram Zucker-Scharff <aramzs@hacktext.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Bullrich/reveal-eleventy-template/issues"
+    },
+    "homepage": "https://aramzs.github.io/build-a-website/",
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "reveal.js": "^4.6.1"
+    },
+    "main": ".eleventy.js",
+    "devDependencies": {
+        "@11ty/eleventy": "^2.0.1",
+        "prettier": "^3.0.3"
+    }
 }
