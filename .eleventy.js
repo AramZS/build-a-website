@@ -27,10 +27,10 @@ module.exports = (config) => {
     });
 
     return {
-        markdownTemplateEngine: "njk",
-        dataTemplateEngine: "njk",
-        htmlTemplateEngine: "njk",
-        //pathPrefix: "/build-a-website/",
+        // markdownTemplateEngine: "njk",
+        // dataTemplateEngine: "njk",
+        // htmlTemplateEngine: "njk",
+        pathPrefix: "/build-a-website/",
         dir: {
             input: "src",
             output: "dist",
