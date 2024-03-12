@@ -22,6 +22,8 @@ module.exports = function (eleventyObj) {
     }
     if (data.iframeUrl) {
         iframeProps = `data-background-iframe="${data.iframeUrl}" data-background-interactive`;
+        // Could add data-preload here to load it at the beginning?
+        // Check https://revealjs.com/backgrounds/
     }
     if (data.title) {
         titleTag = `<h2 ${titleFragment}>${data.title}</h2>`;
