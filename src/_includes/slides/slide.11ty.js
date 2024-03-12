@@ -8,6 +8,8 @@ module.exports = function (eleventyObj) {
     let titleFragment = ""; // class="fragment fade-out"
     let iframeProps = "";
     let extraClass = "";
+    let notes = "";
+    let cite = "";
     if (data.titleAnimation?.length > 0) {
         titleFragment = `class="${data.titleAnimation}"`;
     }
@@ -31,11 +33,19 @@ module.exports = function (eleventyObj) {
     if (data.iframeProps?.length > 0) {
         extraClass = `class="iframe-frame"`;
     }
+    if (data.notes?.length > 0) {
+        notes = `<aside class="notes">${data.notes}</aside>`;
+    }
+    if (data.cite?.length > 0) {
+        cite = `<cite>*From: <a href="${data.cite}" target="_blank" >${data.cite}</a></cite>`;
+    }
     return `
 <section ${extraClass} ${iframeProps} ${transition} ${backgroundColor}>
   ${titleTag}
-  ${image}
   ${eleventyObj.content}
+  ${image}
+  <div class="citation">${cite}</div>
+  ${notes}
 </section>
 `;
 };

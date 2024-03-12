@@ -21,6 +21,8 @@
     "homepage": "https://aramzs.github.io/build-a-website/",
     "dependencies": {
         "dotenv": "^16.4.5",
+        "markdown-it": "^14.0.0",
+        "markdown-it-link-attributes": "^4.0.1",
         "reveal.js": "^4.6.1"
     },
     "main": ".eleventy.js",

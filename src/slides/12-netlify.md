@@ -1,0 +1,1 @@
+[Netlify](https://www.netlify.com/) can be used for more complex static sites. 

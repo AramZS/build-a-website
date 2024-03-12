@@ -3,8 +3,9 @@ const slideBuilder = require("./slides/slide.11ty.js");
 module.exports = function (data) {
     let slides = "";
     Slide = slideBuilder.bind(this);
-    if (data.collections.slides) {
-        slides = data.collections.slides
+    console.log(data.collections.slidesBySlug);
+    if (data.collections.slidesBySlug) {
+        slides = data.collections.slidesBySlug
             .map((slide) => {
                 let slideFragment = Slide(slide);
                 return `
@@ -15,6 +16,10 @@ module.exports = function (data) {
     }
     return /*html*/ `
         <!doctype html>
+        <head>
+        <script defer data-domain="aramzs.github.io" src="https://plausible.io/js/script.js"></script>
+
+        </head>
         <header>
             <link
                 rel="stylesheet"
@@ -24,6 +29,10 @@ module.exports = function (data) {
                 rel="stylesheet"
                 href="${this.url("assets/reveal/theme/dracula.css")}"
             />
+            <link
+            rel="stylesheet"
+            href="${this.url("assets/user.css")}"
+        />
         </header>
         <title>${data.title}</title>
 
