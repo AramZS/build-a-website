@@ -129,3 +129,18 @@
 cite {
     font-size: 0.2em;
 }
+
+.twin-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 42vh;
+}
+
+@media print {
+    [data-background-hash] {
+        display: none;
+    }
+}

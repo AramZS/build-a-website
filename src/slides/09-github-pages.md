@@ -3,7 +3,7 @@ title: GitHub Pages
 transition: convex
 ---
 
-GitHub pages are a free, easy, low-effort way to host websites. 
+[GitHub pages](https://pages.github.com/) are a free, easy, low-effort way to host websites. 
 
 You can host them by: 
 

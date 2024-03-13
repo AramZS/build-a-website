@@ -8,4 +8,4 @@ Markdown is a shorthand way to write text intended for HTML. It works a lot like
 
 Check out [basic Markdown rules](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) and this [cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-Most systems let you add metadata to a page using "[Front Matter](https://jekyllrb.com/docs/front-matter/)".
+Most systems let you add metadata to a page using [`Front Matter`](https://jekyllrb.com/docs/front-matter/).
