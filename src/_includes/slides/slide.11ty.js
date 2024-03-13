@@ -37,14 +37,14 @@ module.exports = function (eleventyObj) {
         notes = `<aside class="notes">${data.notes}</aside>`;
     }
     if (data.cite?.length > 0) {
-        cite = `<cite>*From: <a href="${data.cite}" target="_blank" >${data.cite}</a></cite>`;
+        cite = `<div class="citation"><cite>*From: <a href="${data.cite}" target="_blank" >${data.cite}</a></cite></div>`;
     }
     return `
 <section ${extraClass} ${iframeProps} ${transition} ${backgroundColor}>
   ${titleTag}
   ${eleventyObj.content}
   ${image}
-  <div class="citation">${cite}</div>
+  ${cite}
   ${notes}
 </section>
 `;

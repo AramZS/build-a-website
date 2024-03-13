@@ -34,7 +34,7 @@
     }
 }
 
-/* animated pie chart */
+/* animated pie chart https://www.freecodecamp.org/news/css-only-pie-chart/ */
 @property --p {
     syntax: "<number>";
     inherits: true;
@@ -87,7 +87,7 @@
         translateY(calc(50% - var(--w) / 2));
 }
 .animate {
-    animation: p 1s 0.5s both;
+    animation: p 2.5s 2.5s both infinite;
 }
 .no-round:before {
     background-size:

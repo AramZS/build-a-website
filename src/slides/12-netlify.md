@@ -1,1 +1,1 @@
-[Netlify](https://www.netlify.com/) can be used for more complex static sites. 
+[Netlify](https://www.netlify.com/) can be used to host more complex static sites. 
